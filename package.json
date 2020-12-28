@@ -4,10 +4,11 @@
 	"description": "Restaurant page project for The Odin Project",
 	"main": "src/index.js",
 	"scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=\"development\"",
-    "dev": "webpack --mode=\"production\"",
-    "start": "live-server ./dist --port=5500"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode=\"production\"",
+		"dev": "webpack --mode=\"development\"",
+		"start": "live-server ./dist --port=5500",
+		"watch": "webpack --watch --mode=\"production\""
 	},
 	"repository": {
 		"type": "git",
@@ -24,12 +25,14 @@
 		"url": "https://github.com/JoaoOliveira85/restaurant/issues"
 	},
 	"homepage": "https://github.com/JoaoOliveira85/restaurant#readme",
-	"dependencies": {},
+	"dependencies": {
+		"run-all": "^1.0.1"
+	},
 	"devDependencies": {
-		"webpack": "^5.11.0",
-		"webpack-cli": "^4.3.0",
 		"eslint": "^7.16.0",
 		"eslint-config-prettier": "^7.1.0",
-		"prettier": "2.2.1"
+		"prettier": "2.2.1",
+		"webpack": "^5.11.0",
+		"webpack-cli": "^4.3.0"
 	}
 }

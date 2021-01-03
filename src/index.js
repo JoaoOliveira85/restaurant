@@ -12,7 +12,7 @@ contentWindow.appendChild(header);
 createDivs(header, "div", 3, ["logo", "navBar", "filler"], "headerDivs");
 
 const logoImg = document.createElement("img");
-logoImg.setAttribute("src", "/images/logo.png");
+logoImg.setAttribute("src", "./images/logo.png");
 const logoTxt = document.createElement("div");
 logoTxt.innerText = siteInfo.NAME;
 document.querySelector("#logo").appendChild(logoImg);
@@ -35,6 +35,8 @@ itemList.map((listItem) => {
 	menu.appendChild(currentItem);
 });
 
+document.querySelector("#navBar").appendChild(menu);
+
 const pageContent = document.createElement("div");
 pageContent.id = "pageContent";
 
@@ -45,8 +47,6 @@ itemList.map((listItem) => {
 		currentItemIndex
 	].id = `${listItem.id}`;
 });
-
-document.querySelector("#navBar").appendChild(menu);
 
 contentWindow.appendChild(pageContent);
 
@@ -64,4 +64,6 @@ createDivs(
 footer.querySelector("#footerContacts").innerText = siteInfo.address;
 footer.querySelector("#hours").innerText = siteInfo.businessHours;
 footer.querySelector("#social").innerText = siteInfo.socialNetworks;
+
 var tabs = new Tabby("[data-tabs]");
+tabs.toggle("#home");

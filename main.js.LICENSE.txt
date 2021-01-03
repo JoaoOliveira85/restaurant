@@ -13,6 +13,8 @@
   PERFORMANCE OF THIS SOFTWARE.
   ***************************************************************************** */
 
+/*! tabbyjs v12.0.3 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/tabby */
+
 /**
      * @license
      * Copyright Google Inc. All Rights Reserved.

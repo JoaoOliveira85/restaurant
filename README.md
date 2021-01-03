@@ -19,7 +19,7 @@ npm run build
 For production build, or:
 
 ```sh
-npm run deva
+npm run dev
 ```
 
 For development build.
